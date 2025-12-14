@@ -11,7 +11,7 @@ Matrix_CSV/
 │── main.c          // mã nguồn C
 │── Book1.csv       // dữ liệu ma trận mẫu
 │── Book2.csv       // dữ liệu ma trận mẫu
-│── output/         // file thực thi sau khi build (không bắt buộc commit)
+│── output/         // file thực thi sau khi build
 │── README.md
 ```
 
