@@ -1,6 +1,6 @@
 # Matrix_CSV
 
-Chương trình C đọc **2 ma trận từ file CSV** và thực hiện các phép toán **cộng, trừ, nhân** ma trận. Người dùng **chọn file CSV khi chạy chương trình** thông qua tham số dòng lệnh.
+Chương trình C đọc 2 ma trận từ file CSV và thực hiện các phép toán cộng, trừ, nhân ma trận. Người dùng chọn file CSV khi chạy chương trình thông qua tham số dòng lệnh.
 
 ---
 
@@ -19,7 +19,7 @@ Matrix_CSV/
 
 ## 2. Định dạng file CSV
 
-Mỗi file CSV chứa **2 ma trận**, phân cách bằng dòng chữ `matran1` và `matran2`.
+Mỗi file CSV chứa 2 ma trận, phân cách bằng dòng chữ `matran1` và `matran2`.
 
 Ví dụ:
 ```
@@ -41,7 +41,7 @@ matran2
 
 ## 3. Cách biên dịch chương trình
 
-Yêu cầu: đã cài **gcc** (MinGW-w64 trên Windows).
+Yêu cầu: đã cài gcc (MinGW-w64 trên Windows).
 
 Tại thư mục chứa `main.c`, chạy:
 
@@ -70,7 +70,19 @@ Chương trình sẽ in ra:
 - Kết quả A - B (nếu hợp lệ)
 - Kết quả A * B (nếu hợp lệ)
 
-Nếu không thực hiện được phép toán, chương trình sẽ **thông báo rõ lý do** (khác số hàng, khác số cột, sai điều kiện nhân).
+Nếu không thực hiện được phép toán, chương trình sẽ thông báo rõ lý do (khác số hàng, khác số cột, sai điều kiện nhân).
+
+## Lưu ý về vị trí file CSV
+
+Do chương trình được chạy từ thư mục `output`, nên **file CSV (Book1.csv, Book2.csv) phải được đặt trong cùng thư mục `output` với file thực thi**.
+
+Ví dụ cấu trúc khi chạy chương trình:
+
+output/
+│── main.exe
+│── Book1.csv
+│── Book2.csv
+
 
 ---
 
@@ -97,8 +109,3 @@ A + B:
 
 ---
 
-## 6. Ghi chú
-
-- Chương trình kiểm tra đầy đủ điều kiện toán học trước khi tính
-- Phù hợp cho bài tập C cơ bản–trung cấp
-- Có thể mở rộng để ghi kết quả ra file CSV hoặc chọn phép toán riêng lẻ
